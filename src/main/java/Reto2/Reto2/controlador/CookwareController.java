@@ -54,8 +54,8 @@ public class CookwareController {
     } 
 
     @GetMapping("/price/{price}")
-    public List<Cookware>getByPrice(@PathVariable("price")double price){
-        return cookwareService.getByPrice(price);
+    public List<Cookware>getByPriceLessThanEqual(@PathVariable("price")double price){
+        return cookwareService.getByPriceLessThanEqual(price);
     }
 
     @GetMapping("/description/{description}")

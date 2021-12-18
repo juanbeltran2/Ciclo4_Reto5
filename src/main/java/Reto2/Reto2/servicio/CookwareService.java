@@ -82,8 +82,8 @@ public class CookwareService {
         return aBoolean;
     }
 
-    public List<Cookware>getByPrice(double price){
-        return cookwareRepository.getByPrice(price);
+    public List<Cookware>getByPriceLessThanEqual(double price){
+        return cookwareRepository.getByPriceLessThanEqual(price);
     }
 
     public List<Cookware>getByDescriptionContainingIgnoreCase(String description){

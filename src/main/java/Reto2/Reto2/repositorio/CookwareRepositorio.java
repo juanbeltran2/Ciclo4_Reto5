@@ -31,8 +31,8 @@ public class CookwareRepositorio {
     public void delete(Cookware clothe) {
         repository.delete(clothe);
     }
-    public List<Cookware>getByPrice(double price){
-        return repository.findByPrice(price);
+    public List<Cookware>getByPriceLessThanEqual(double price){
+        return repository.findByPriceLessThanEqual(price);
     }
 
     public List<Cookware>getByDescriptionContainingIgnoreCase(String description){
